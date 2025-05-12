@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout-styles.css">
+</head>
+<body>
+  
+    <header class="header">
+        <div class="about-button">
+            <span>ABOUT BUTTON</span>
+            <img src="https://i.postimg.cc/PqmCxNQb/image.png" alt="Logo" class="logo-image">
+            <button class="home-button">
+                <img src="https://i.postimg.cc/6pt2BZSY/image.png" alt="Home" class="home-icon">
+            </button>
+        </div>
+        <div class="checkout-text">
+            CHECKOUT
+        </div>
+    </header>
+
+    <div class="main-content">
+      
+        <section class="section">
+            <h2 class="section-title">PAYMENT METHOD</h2>
+            <div class="payment-methods">
+                <img src="https://i.postimg.cc/hPYVmW8v/image.png" alt="American Express">
+                <img src="https://i.postimg.cc/Twc42YDp/image.png" alt="Mastercard">
+                <img src="https://i.postimg.cc/fLbxXwP3/image.png" alt="Visa">
+                <img src="https://i.postimg.cc/DwBdBjX4/image.png" alt="PayPay">
+            </div>
+            <button class="pay-button">PAY ONLINE</button>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">ENTER EMAIL ADRESS</h2>
+            <div class="email-container">
+                <input type="email" class="email-input" placeholder="ENTER HERE">
+                <div class="search-icon-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="black">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="email-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </div>
+            <p class="privacy-text">Click here for <a href="#" class="privacy-link">privacy and terms and condition</a></p>
+        </section>
+
+        <!-- Shipping Cost -->
+        <section class="section">
+            <h2 class="section-title">SHIPPING COST</h2>
+            <div class="free-text">FREE!</div>
+        </section>
+
+        <section class="section">
+            <div class="cart-header">
+                <span class="cart-title">CART</span>
+            </div>
+            
+            <div class="item-container">
+                <div class="item-circle"></div>
+                <span class="item-description">medium size, red color</span>
+                <span class="item-quantity">(1X)</span>
+            </div>
+            
+            <div class="price-container">
+                <h3 class="price-title">PRICE</h3>
+                <p class="price-value">100$</p>
+            </div>
+            
+            <div class="coupon-container">
+                <h3 class="coupon-title">COUPON/PROMO CODE</h3>
+                <input type="text" class="coupon-input">
+            </div>
+            <button class="save-button">SAVE DETAILS</button>
+            <button class="order-button">ORDER HERE</button>
+        </section>
+    </div>
+  <script src="checkout.js"></script>
+</body>
+</html>
