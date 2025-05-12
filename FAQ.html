@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ title</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      background-color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icons img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+
+    .content {
+      display: flex;
+      padding: 40px;
+      gap: 60px;
+    }
+
+    .left-panel {
+      flex: 1;
+    }
+
+    .search-box {
+      display: flex;
+      background: #333;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 15px;
+      border: none;
+      font-size: 16px;
+      background: #eee;
+      color: #000;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .search-box button {
+      background: #333;
+      color: white;
+      border: none;
+      padding: 0 20px;
+      font-size: 20px;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+    }
+
+    .faq-item {
+      border-top: 2px solid white;
+      padding: 12px 0;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      display: none;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .right-panel {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    .right-panel p {
+      font-size: 18px;
+      max-width: 400px;
+    }
+
+    .right-panel .highlight {
+      color: #ff5c5c;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FAQ</h1>
+  <div class="icons">
+<img class="homeicon" src="https://i.postimg.cc/P5vXs5f2/Screenshot-2025-04-23-at-14-00-40-removebg-preview.png" alt="Home">
+   <img class="icon" src="https://i.postimg.cc/x86SNHqr/Screenshot-2025-04-28-at-13-34-05-removebg-preview.png" alt="Home">
+
+  </div>
+</header>
+
+<div class="content">
+  <div class="left-panel">
+    <div class="search-box">
+      <input type="text" placeholder="Search about us">
+      <button><span>&#128269;</span></button>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">About our profile? <span class="arrow">&#9660;</span></button>
+      <div class="faq-answer">Hi we are 2 smart people selling stuffs</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">About our product? <span class="arrow">&#9660;</span></button>
+      <div class="faq-answer">We sell a button called about button and it costs 125$</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What are we working on? <span class="arrow">&#9660;</span></button>
+      <div class="faq-answer">We are working on some next level smart stuff which is kinda hard to explain</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Where do I buy the product? <span class="arrow">&#9660;</span></button>
+      <div class="faq-answer">You can buy the button in the check out page</div>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <p>
+      Here at the <span class="highlight">“about button”</span> company we make sure we satisfy our customers' needs.
+      We can answer any question YOU have about our company so feel free to check out our already answered questions
+      or ask something yourself in the search bar.
+    </p>
+  </div>
+</div>
+
+<script>
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      const isVisible = answer.style.display === 'block';
+      answer.style.display = isVisible ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
+
