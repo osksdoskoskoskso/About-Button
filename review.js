@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.home-button').addEventListener('click', function() {
-        alert('Home button clicked!');
+        alert('Redirecting to home!');
     });
     document.querySelector('.review-input').addEventListener('click', function() {
         alert('Review added!');
