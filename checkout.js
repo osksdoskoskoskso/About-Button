@@ -7,3 +7,6 @@ document.querySelector('.order-button').addEventListener('click', function() {
 document.querySelector('.save-button').addEventListener('click', function() {
     alert('Saved details thank you!');
 });
+document.querySelector('.home-button').addEventListener('click', function() {
+    alert('Redericting to homepage.');
+});
