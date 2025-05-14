@@ -1,33 +1,106 @@
-<link rel="stylesheet" type="text/css" href="index.css" />
 <html>
-  <Body>
-    <nav>
-      <img src="https://i.postimg.cc/pXMHwGkX/halo-effect.png" class ="logo">
-    </nav>
-    <br> 
-<h1 class=heading>
-  Welcome to<br>
-  About Button
-</h1>
-  </Body>
-   
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="AboutUs.html">AboutUs</a>
-  <a href="checkout.html">Checkout</a>
-  <a href="FAQ.html">FAQ</a>
-  <a href="review.html">Review</a>
-</div>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+<head>
+  <style>
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
 
-<div id="main">
-  <span id="openBtn" onclick="openNav()">&#9776; open</span>
-</div>
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
 
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
 
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-right 0.5s;
+      padding: 16px;
+    }
+
+    #openBtn {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+      font-size: 30px;
+    }
+
+    .logo {
+      max-height: 60px;
+    }
+
+    .socially {
+      max-width: 100%;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="https://i.postimg.cc/pXMHwGkX/halo-effect.png" class="logo">
+  </nav>
+  <br>
+  <h1 class="heading">
+    Welcome to<br>
+    About Button
+  </h1>
   
-
-<div style="height: 1500px;"></div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="AboutUs.html">AboutUs</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="review.html">Review</a>
+  </div>
   
+  <div id="main">
+    <span id="openBtn" onclick="openNav()">&#9776; open</span>
+  </div>
+  
+  <div style="height: 1500px;"></div>
   
   <img src="https://i.postimg.cc/Nfz1BVnX/image.png" alt="My Image" class="socially">
-  
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginRight = "250px";
+      document.getElementById("openBtn").style.right = "270px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginRight = "0";
+      document.getElementById("openBtn").style.right = "20px";
+    }
+  </script>
+</body>
+</html>
