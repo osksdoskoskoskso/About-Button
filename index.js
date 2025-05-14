@@ -9,4 +9,3 @@ function closeNav() {
   document.getElementById("main").style.marginRight = "0";
   document.getElementById("openBtn").style.right = "20px";
 }
-
