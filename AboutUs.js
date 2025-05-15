@@ -5,3 +5,8 @@ function aboutUs() {
 function ownerInfo() {
   alert("Soichiro is 14 years old and Dinula is 15 years old. We are both one of the smartest student from stanford university");
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.home-button').addEventListener('click', function() {
+        alert('Redirecting to home!');
+    });
