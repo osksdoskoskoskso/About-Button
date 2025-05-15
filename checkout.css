@@ -36,11 +36,11 @@ body {
     cursor: pointer;
     padding: 0;
     margin: 0;
-    width: 15px;
-    length: 15px;
 }
 .home-icon {
     object-fit: contain;
+    width: 20px;
+    length: 20px;
 }
 .checkout-text {
     font-size: 24px;
