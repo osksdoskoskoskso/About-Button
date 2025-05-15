@@ -36,10 +36,10 @@ body {
     cursor: pointer;
     padding: 0;
     margin: 0;
+    width: 30px;
+    length: 30px;
 }
 .home-icon {
-    width: 30px;
-    height: 30px;
     object-fit: contain;
 }
 .checkout-text {
