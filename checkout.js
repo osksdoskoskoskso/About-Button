@@ -10,3 +10,9 @@ document.querySelector('.save-button').addEventListener('click', function() {
 document.querySelector('.home-button').addEventListener('click', function() {
     alert('Redericting to homepage.');
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.home-button').addEventListener('click', function() {
+        alert('Redirecting to home!');
+    });
