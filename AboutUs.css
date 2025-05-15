@@ -98,6 +98,18 @@ h1 {
   margin-bottom: 20px;
 }
 
+.home-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.home-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
 
 
 
